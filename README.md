@@ -1,4 +1,6 @@
 ![tesla-clone](https://user-images.githubusercontent.com/78550096/128695777-329afed0-7193-4b7b-9e69-f10e86babfd5.jpg)
+![Project Wireframes](https://user-images.githubusercontent.com/78550096/129444946-e0e1445d-13ed-48d6-bf0d-81180f0ead57.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
