@@ -1,0 +1,75 @@
+export const sections = [
+  {
+    id: 'model-s',
+    title: 'Model S',
+    description: 'Order Online for Touchless Delivery',
+    image: 'model-s.webp',
+    leftBtn: 'Custom Order',
+    rightBtn: 'Existing Inventory',
+  },
+  {
+    id: 'model-y',
+    title: 'Model Y',
+    description: 'Order Online for Touchless Delivery',
+    image: 'model-y.webp',
+    leftBtn: 'Custom Order',
+    rightBtn: 'Existing Inventory',
+  },
+  {
+    id: 'model-3',
+    title: 'Model 3',
+    description: 'Order Online for Touchless Delivery',
+    image: 'model-3.webp',
+    leftBtn: 'Custom Order',
+    rightBtn: 'Existing Inventory',
+  },
+  {
+    id: 'model-x',
+    title: 'Model X',
+    description: 'Order Online for Touchless Delivery',
+    image: 'model-x.webp',
+    leftBtn: 'Custom Order',
+    rightBtn: 'Existing Inventory',
+  },
+  {
+    id: 'solar-panels',
+    title: 'Solar Panels',
+    description: 'Lowest Cost Solar Panels in America',
+    image: 'solar-panel.webp',
+    leftBtn: 'Order Now',
+    rightBtn: 'Learn More',
+  },
+  {
+    id: 'solar-roof',
+    title: 'Solar Roof',
+    description: 'Produce Clean Energy From Your Roof',
+    image: 'solar-roof.webp',
+    leftBtn: 'Order Now',
+    rightBtn: 'Learn More',
+  },
+  {
+    id: 'accessories',
+    title: 'Accessories',
+    description: '',
+    image: 'accessories.webp',
+    leftBtn: 'Shop Now',
+  },
+]
+
+export const topNav = ['Model S', 'Model 3', 'Model X', 'Model Y', 'Solar Roof', 'Solar Panels']
+
+export const drawerLinks = [
+  'Existing Inventory',
+  'Used Inventory',
+  'Trade-In',
+  'Test Drive',
+  'Cybertruck',
+  'Roadster',
+  'Semi',
+  'Charging',
+  'Powerwall',
+  'Commercial Energy',
+  'Utilities',
+  'Find Us',
+  'Support',
+]

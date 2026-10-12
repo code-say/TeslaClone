@@ -1,48 +1,51 @@
+# Tesla Clone
+
+A responsive clone of the Tesla homepage, built with **React 18**, **Vite** and **styled-components**.
+
+> Portfolio / learning project — not affiliated with Tesla, Inc.
+
 ![tesla-clone](https://user-images.githubusercontent.com/78550096/128695777-329afed0-7193-4b7b-9e69-f10e86babfd5.jpg)
-![Project Wireframes](https://user-images.githubusercontent.com/78550096/129444946-e0e1445d-13ed-48d6-bf0d-81180f0ead57.png)
 
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+- Full-screen, scroll-snapping sections for each product (Model S, Y, 3, X, Solar Panels, Solar Roof, Accessories)
+- Fade-in text and buttons as each section scrolls into view (IntersectionObserver)
+- Translucent header that blurs the content behind it once you scroll
+- Slide-out menu drawer with backdrop, Escape-to-close and scroll lock
+- Mobile-first layout, keyboard focus styles and `prefers-reduced-motion` support
+- WebP images (~75% smaller than the original JPEGs)
 
-## Available Scripts
+## What changed in v2 (2026)
 
-In the project directory, you can run:
+The original version was built on Create React App 4 and React 17, which no longer builds on current Node.js. v2:
 
-### `npm start`
+- Migrated from CRA to **Vite 6** and **React 18** (`createRoot`)
+- Removed Material-UI and the unused Redux counter template (icons are inline SVG now)
+- Upgraded to styled-components 6 with transient props
+- Fixed typos ("Modle" → "Model") and a broken drawer border style
+- Section content now lives in `src/data.js`
+- Added a Netlify config (`netlify.toml`)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Run locally
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # production build in dist/
+npm run preview
+```
 
-### `npm test`
+## Project structure
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+  main.jsx            entry point
+  App.jsx             renders header + sections
+  data.js             section and menu content
+  components/
+    Header.jsx        top bar + slide-out drawer
+    Section.jsx       full-screen product section
+    Footer.jsx
+    Icons.jsx
+public/images/        logo and WebP backgrounds
+```
